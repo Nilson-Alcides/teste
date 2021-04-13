@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Njalcides_AutoCompletar>
+            <version>0.0.1</version>
+        </Njalcides_AutoCompletar>
+    </modules>
+    <frontend>
+        <routers>
+            <autocompletar>
+                <use>standard</use>
+                <args>
+                    <module>Njalcides_AutoCompletar</module>
+                    <frontName>autocompletar</frontName>
+                </args>
+            </autocompletar>
+        </routers>
+    </frontend>
+</config>

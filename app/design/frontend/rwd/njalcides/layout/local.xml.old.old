@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<layout>
+		
+		<default>
+			<sales_email_order_items> 
+				<reference name="items"> 
+					<action method="setTemplate"> <template>njalcides/order/items.phtml</template> </action> 
+				</reference>
+			 </sales_email_order_items> 
+
+			<sales_email_order_items> 
+			 	<reference name="items">
+          			<action method="setTemplate">
+              		<template>email/order/items.phtml</template>
+			        </action>
+			    </reference> 
+			</sales_email_order_items>
+
+			<!-- <reference name="content">
+				<block type="core/template" name="comschool.exemplo1" template="comschool/exemplo1.phtml"/>
+
+			</reference> -->
+
+		<!-- 	<reference name="comschool.exemplo1">	
+
+				<block type="core/template" name="comschool.exemplo2" template="comschool/exemplo2.phtml"/>
+
+			</reference>
+ -->
+			<!-- <remove name="breadcrumbs"/> -->
+
+		</default>
+
+		<customer_logged_in>
+
+			<!--<remove name="comschool.exemplo2"/>
+				
+			<reference name="comschool.exemplo1">
+				<action method="setData">
+					<name>teste</name>
+				</action>
+			</reference>
+			-->
+
+		</customer_logged_in>
+
+		<!--<catalog_product_view>
+		<update handle="page_two_columns_left"/>
+
+		 
+	</catalog_product_view>-->
+
+	<default>
+<!-- 
+		<reference name="left">	
+
+				<block type="core/template" before='-' name="bloco.esquerdo.exemplo"  template="comschool/exemplo.phtml"/>
+
+			</reference> -->
+
+<!-- Mudar o newsletter de Lugar -->
+
+		<!-- <reference name="footer">
+			<action method="unsetChild">
+				<alias>newsletter</alias>
+			</action>
+		</reference>
+
+		<reference name="content">  
+			<action method="insert">
+				<block>footer.newsletter</block>
+			</action>
+		</reference> -->
+
+	
+       <!--  <reference name="content">
+        	<block type="cms/block" name="comschool.meu_bloco">
+        		<action method="setBlockId"><block_id>meu_bloco</block_id>
+        	</action>
+        	</block>
+        </reference> -->
+      
+
+       <reference name="head">
+       	<action method="addCss">
+       		<name>css/style_custom.css</name>
+       	</action>
+       	<action method="addItem">
+       		<type>skin_js</type>
+       		<name>js/custom.js</name>
+       	</action>
+       </reference>
+
+
+<!-- <PRODUCT_TYPE_simple>
+	<reference name="head">
+       	<action method="addCss">
+       		<name>css/produt.css</name>
+       	</action>
+	</reference>
+</PRODUCT_TYPE_simple> -->
+
+<!-- <reference name="footer_links">
+   <action method="addLink" translate="label title">
+    	<label>Minha Pagina</label>
+   	      <url>minha_pagina</url>
+   			<title>Minhapagina</title>
+   				<prepare>true</prepare>
+   </action>
+</reference> -->
+
+<!-- 	<reference name="root">
+		<block type="core/text_list" name="page_banner" translate="label">
+                <label>Meu Banner personalizado</label>
+        </block>
+    </reference> -->
+
+	</default>
+	
+
+	</layout>
+	
+
+
+   
+

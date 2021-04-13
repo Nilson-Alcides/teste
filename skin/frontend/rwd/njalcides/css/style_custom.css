@@ -1,0 +1,48 @@
+/*************************
+** Altera a cor de todo layout ***
+*************************/
+/*body>div.wrapper{
+	background: #c8fcfb;
+	/*background-image: url();
+}
+*/
+
+/*************************
+** Altera a cor camada Seja Bem Vindo ***
+*************************/
+body .header-language-background
+{
+	background: #55b4da;
+}
+/*************************
+** Aumenta o campo CEP ***
+*************************/
+.shipping .form-list .input-box{
+  width: 120px;
+}
+/*************************
+******** Menu ************
+*************************/
+.nav-primary a, .nav-primary li > a 
+{
+    color: #FFFFFF !important;
+    background-color: #278dbb;
+    font-size: 13px;
+}
+/*************************
+******** Top Menu Hover ********
+*************************/
+/*@media only screen and (min-width: 771px)*/
+.nav-primary a:hover, .nav-primary li:hover > a:hover 
+{
+   	color: #FFFFFF;
+    background-color: #008c9e;
+}
+/*************************
+******** Espaço entre Menu ********
+*************************/
+body .nav-primary a.level0
+{
+    padding: 0 11px;
+   
+}
